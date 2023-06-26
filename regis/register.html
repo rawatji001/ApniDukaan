@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Website</title>
+
+    <!-- //Link Font-Awesome--------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- //Link Font--------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- // -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--// Image Slider link(Swiper)  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!-- //Link CSS---------------- -->
+    <link rel="stylesheet" href="./register.css" />
+  </head>
+
+  <body>
+    <div class="backhome">
+      <a href="../index.html"><i class="fa fa-backward"></i>Back to Home</a>
+    </div>
+
+    <!--  -->
+
+    <!--  -->
+
+    <div class="login-section">
+      <div class="form-box">
+        <form action="">
+          <h2>Sign Up</h2>
+          <div class="input-box">
+            <span class="icon">
+              <i class="fa fa-envelope"></i>
+            </span>
+            <input type="email" required="required">
+            <label for="">Email</label>
+          </div>
+          <!--  -->
+
+          <div class="input-box">
+            <span class="icon">
+              <i class="fa fa-lock"></i>
+            </span>
+            <input type="password" id="pswd1" required="required">
+            <label for="">Password</label>
+          </div>
+          <div class="input-box">
+            <span class="icon">
+              <i class="fa fa-lock"></i>
+            </span>
+            <input type="password" id="pswd2" required="required">
+            <label for="">Confirm Password</label>
+          </div>
+          
+          <!-- <div class="remember-password">
+            <label for="">
+              <input type="checkbox" > Remember Me
+            </label>
+            <a href="#">Forgot Password</a>
+          </div> -->
+          <button class="btn" type="submit" onclick="matchPassword()">Register</button>
+
+          <div class="create-account">
+            <p>Already have an Account? <a href="../login/login.html"> Login</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./regis.js"></script>
+  </body>
+</html>

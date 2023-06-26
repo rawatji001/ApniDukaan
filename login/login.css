@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Akaya Kanadaka', cursive;
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: url(./back.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+}
+/* Back to home */
+.backhome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: indianred;
+
+}
+.backhome a{
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-shadow: 0.5rem 0.2rem 1rem #ffffff83;
+    color: indianred;
+    
+}
+.backhome a i{
+    padding-right: 1rem;
+    color: indianred;
+
+}
+
+.backhome a:hover{
+    color:white;
+}
+.backhome i:hover{
+    color: white;
+}
+
+
+/*  */
+
+/* Form section */
+
+.login-section{
+    border: 0.2rem solid indianred;
+    height: 49rem;
+    width: 40rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    backdrop-filter: blur(1rem);
+    border-radius: 1rem;
+    transition: 0.5s;
+}
+.login-section:hover{
+    box-shadow: 0 0 6rem indianred;
+}
+
+.login-section .form-box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.form-box h2{
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.form-box .input-box{
+    width: 34rem;
+    height: 50%;
+    border-bottom: 0.2rem solid #fff;
+    margin: 8rem 0;
+    position: relative;
+}
+
+.input-box label{
+    position: absolute;
+    top: -50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    padding-right: 2.8rem;
+    color: #fff;
+    font-weight: 800;
+}
+.input-box .icon{
+    position: absolute;
+    top: -1.3rem;
+    right: 0;
+    font-size: 1.9rem;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label{
+    top: -0.5rem;
+    color: indianred;
+}
+
+.remember-password{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: -1.5rem 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-password label input{
+    accent-color: indianred;
+    margin-right: 0.3rem;
+}
+.remember-password a{
+    color: #fff;
+    font-weight: 600;
+}
+.remember-password a:hover{
+    color: indianred;
+    font-weight: 800;
+}
+.btn{
+    background-color: #fff;
+    width: 100%;
+    height: 4.5rem;
+    outline: none;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    color: #fff;
+    background: indianred;
+    box-shadow: rgba(0, 0, 0, 0.4);
+    font-size: 1.5rem;
+}
+.btn:hover{
+    color: rgba(15, 10, 29, 0.849);
+    background-color: #e17c7c;
+    
+
+}
+.create-account{
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 2.5rem;
+
+}
+
+.create-account p a{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.create-account p a:hover{
+    color: indianred;
+    font-weight: 800;
+}

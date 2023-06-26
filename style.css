@@ -1,0 +1,403 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Making Colors for all-------------- */
+:root {
+  --primary: indianred;
+  --secondary: rgba(15, 10, 29, 0.849);
+  --light: #2f3640;
+}
+
+i{
+  color: var(--primary);
+}
+
+/* Header--------------- */
+header {
+  width: 100%;
+  height: 100vh;
+}
+
+/*----------------------Navbar-1--------------------*/
+.nav1 {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  box-shadow: 0.2rem 0 0.3rem grey;
+}
+.nav1 .left {
+  flex-basis: 50%;
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.nav1 .left a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: bold;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+}
+.nav1 .left a:hover{
+  text-decoration:underline ;
+}
+
+.nav1 .right {
+  flex-basis: 50%;
+}
+
+.nav1 .right i {
+  font-size: 2rem;
+  background-color: var(--primary);
+  color: white;
+  cursor: pointer;
+  margin: 0 1.5rem;
+  padding: 0.8rem;
+  transition: 0.5s ease-in-out;
+}
+
+.nav1 .right i:hover {
+  transform: rotate(360deg);
+}
+/*------------------------Navbar-1 End-------------------- */
+
+/*  */
+
+/*------------------------Navbar-2-------------------- */
+.nav2 {
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+.nav2 .left2,
+.center,
+.right2 {
+  flex-basis: 30%;
+  margin: auto;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+
+.nav2 .left2{
+  display: flex;
+  flex-direction: column;
+}
+
+.nav2 .left2 a{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  display: block;
+  font-size: 1.5rem;
+  padding-top: 0.2rem;
+}
+
+.nav2 .left2 i {
+  margin-left: 1.5rem;
+}
+
+.nav2 .left2 a:hover{
+  color: var(--primary);
+}
+
+.nav2 .center h1 {
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  color: var(--primary);
+  font-weight: bold;
+}
+.nav2 .center h1 span {
+  color: var(--secondary);
+}
+
+.nav2 .center p {
+  color: grey;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.nav2 .right2 i{
+    margin: 0 0.5rem;
+}
+
+.nav2 .right2 a{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  display: block;
+  font-size: 1.5rem;
+}
+
+.nav2 .right2 a:hover{
+  color: var(--primary);
+}
+/*------------------------Navbar-2-End-------------------- */
+
+/*  */
+
+/*------------------------Navbar-3-------------------- */
+
+.nav3{
+    width: 100%;
+    height: 7rem;
+    line-height: 7rem;
+}
+
+.nav3 ul{
+    text-align: center;
+    list-style: none;
+}
+
+.nav3 ul li{
+    display: inline-block;
+    width: 15rem;
+    position: relative;
+    z-index: 99;
+}
+
+.nav3 ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    display: block;
+    font-size: 1.5rem;
+}
+.nav3 ul li i{
+    color: var(--primary);
+    margin: 0 0.5rem;
+}
+
+.nav3 ul li a:hover{
+    color: var(--primary);
+}
+
+.nav3 ul ul{
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    display: none;
+}
+.nav3 ul ul li{
+    background-color: white;
+    border-bottom: 0.1rem solid var(--primary);
+}
+
+.nav3 ul li:hover>ul{
+    display: block;
+}
+
+/*------------------------Navbar-3-End-------------------- */
+
+/*  */
+
+/*------------------------Featured-------------------- */
+.featured{
+  width: 100%;
+  height: 60vh;
+  background: linear-gradient(to right, rgba(0,0,0,1) 20%, rgba(255,255,255,0.2)), url('./image/g1.jpg');
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.featured-items{
+  max-width: 50rem;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  padding: 1rem;
+  font-size: 2.5rem;
+  font-family: 'Akaya Kanadaka', cursive;
+  color: white;
+}
+
+.featured-items button{
+  background-color: var(--secondary);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  margin: 2rem 0;
+}
+
+/*------------------------Featured-End-------------------- */
+
+/*  */
+
+/*------------------------Latest-------------------- */
+.latest{
+  padding: 5rem 10rem;
+}
+.product-intro{
+  text-align: center;
+}
+.product-intro h1{
+  font-size: 2.5rem;
+  letter-spacing: 0.3rem;
+  font-weight: bolder;
+  color: var(--primary);
+}
+.product-intro span{
+color: var(--secondary);
+}
+.product-intro p{
+  color: grey;
+  margin: 1.5rem 0;
+  font-size: 1.5rem;
+}
+
+/* Cards------- */
+.card-container{
+  width: 100% ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 0;
+  cursor: pointer;
+}
+.card{
+  flex-basis: 20%;
+  padding: 0.8rem;
+  position: relative;
+}
+.card img{
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+.card i{
+ color: goldenrod;
+ margin: 1rem 0;
+}
+.card button{
+  color: white;
+  background-color: var(--secondary);
+  border: none;
+  outline: none;
+  margin-top: 1.5rem;
+  padding: 0.5rem 2rem;
+}
+
+.card:hover img, .card:hover h1{
+  width: 80%;
+  color: var(--primary);
+}
+
+.card::before{
+  content: '20% Off';
+  width: 35%;
+  height: 2.5rem;
+  background-color: var(--primary);
+  color: white;
+  padding: 0 0.4rem;
+  line-height: 2.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-20deg);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+/*------------------------Latest-End-------------------- */
+
+/*  */
+
+/*------------------------Popular Products-------------------- */
+
+/* Nothing we have to do because hamne dekha ki cards same uper wale ki tarah hai to hamne bas images ka name change kar diya......................... */
+
+/*------------------------Popular Products-End-------------------- */
+
+/*  */
+
+/*------------------------Products-Image-Slider-------------------- */
+.trends{
+  padding: 5rem 10rem;
+  background-color: rgb(0, 0, 0, 0.01);
+}
+
+/* Swiper */
+.trends .swiper {
+  width: 100%;
+  padding: 5rem ;
+}
+
+.trends .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 40rem;
+  height: 40rem;
+}
+
+.trends .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/*------------------------Products-Image-Slider-End-------------------- */
+
+/*  */
+
+/*------------------------Footer-------------------- */
+footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  background-color: var(--secondary);
+  color: white;
+  padding: 2rem;
+}
+footer div{
+  flex-basis: 30%;
+}
+footer h1 {
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  color: var(--primary);
+  font-weight: bold;
+}
+footer span{
+  color: white;
+}
+footer p{
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+footer .icons i{
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+footer .heart i{
+  margin: 0 0.2rem;
+  color: var(--primary);
+}
+/*------------------------Footer-End-------------------- */
+
+
